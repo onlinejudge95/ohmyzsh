@@ -70,7 +70,10 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases aws git)
+plugins=(aliases aws copybuffer copyfile docker docker-compose dotenv encode64 extract genpass git heroku httpie nvm pip qrcode safe-paste systemadmin terraform timer yarn)
+
+zstyle ':omz:plugins:nvm' lazy yes
+zstyle ':omz:plugins:nvm' autoload yes
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,3 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+TIMER_PRECISION=2
+TIMER_FORMAT='=> %d'
+TIMER_THRESHOLD=0
