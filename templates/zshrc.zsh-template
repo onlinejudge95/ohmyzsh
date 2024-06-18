@@ -108,3 +108,6 @@ source $ZSH/oh-my-zsh.sh
 TIMER_PRECISION=2
 TIMER_FORMAT='=> %d'
 TIMER_THRESHOLD=0
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
